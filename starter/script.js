@@ -28,7 +28,7 @@ const intialize = function () {
   scores = [0, 0]; //we store the scores of both players in array ;
   currentScore = 0; // this current score is set to 0 becose we will update once the function run
   activePlayer = 0;
-  playing = true; // at the first  we are playing and true   .. this variavble holds true if we are playing
+  playing = true; // at the first  we are playing and true   .. this variable holds true if we are playing
 
   score0El.textContent = 0;
   score1El.textContent = 0;
@@ -54,7 +54,7 @@ const swithPlayer = function () {
 btnRoll.addEventListener('click', function () {
   if (playing) {
     // if true excute all this code
-    const dice = Math.trunc(Math.random() * 6) + 1; // we are generating random number between 1 -6
+    const dice = Math.trunc(Math.random() * 6) + 1; // we are generating random number between 1 - 6
     console.log(dice); //we read the random dice number to the console . this is only for checking that we  are in good path
     diceEl.classList.remove('hidden'); // we are removing the hidden class that we add previous in order to display the dice picture to the screen
     diceEl.src = `dice-${dice}.png`; //this displays the number of dices with the picture
